@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+  <link rel="stylesheet" href="/static/css/home.css">
+  <title>Employee Attrition Prediction</title>
+  
+
+
+</head>
+
+<body>
+
+<center> <h1 id="heading"><b>Employee Attrition Prediction</b></h1> </center>
+<br>
+
+
+ <form  action = "/predict" method="POST">
+   <fieldset>
+   <legend align="center">※※※※※※※※※</legend>
+   <br>
+   <br>
+   <br>
+                    
+   <label><b>Time Spend in Company :</b></label>
+   <input type="number" name="time_spend_company"  placeholder="In Years" required>
+                    
+   <br><br>
+
+   <label><b>Average Monthly Hours :</b></label>
+   <input id="avg_monthly_hours" type="number" name="avg_montly_hours" placeholder="Average Monthly Hours Spend in Company" required  >
+
+   <br><br>
+
+   <label ><b>Number Of Projects :</b></label>
+   <input id="number_project" type="number" name="number_project" placeholder="Number of Projects Completed" required >
+           
+   <br><br>
+
+   <label><b>Employee Engagement (1-5) :</b></label>
+   <input id="Emp_Engagement" type="number" name="EMP_Engagement"  placeholder="Employee's feeling about being engaged in company activities" min="1" max="5" step="any" required >
+      
+   <br><br> 
+     
+   <label><b>Remote Work :</b></label>
+   <input id="percent_remote" type="number" name="Percent_Remote"  placeholder="Percentage of Work Done Remotely" min="0" max="100" required>
+      
+   <br><br>
+
+   <label><b>LinkedIn Hits :</b></label>
+   <input id="LinkedIn_Hits" type="number" name="LinkedIn_Hits"  placeholder="Number of times the employee visits LinkedIn networking sites" required>
+      
+   <br><br>
+
+   <label><b>Employee Role (1-10) :</b></label>
+   <input id="emp_role" type="number" name="Emp_Role"  placeholder="Employee's feeling about the importance of their role in the company" min="1" max="10" required >
+        
+   <br><br>
+
+   <label><b>Remote Work Satisfaction (1-10) :</b></label>
+   <input id="emp_sat_remote" type="number" name="EMP_Sat_Remote"  placeholder="Employee's satisfaction about working remotely" min="1" max="10" step="any" required>
+      
+   <br><br>
+
+
+
+        
+   <center><br><br>
+   <a href="./"> <img src="/static/images/gif1.gif"  width="80"  height="80" class="responsive"align="middle"></a>
+   <br>
+
+   <button id="button" style="vertical-align:middle"> PREDICT</button>
+   <br><br>
+   </center>
+   </fieldset>
+
+ <br>
+ <h2><center> {{result}} </center></h2>
+ <br>
+ <br>
+ <a href="/" id="reset"><p align="middle"><b>‖※   RESET    ※‖</b></p></a>
+ <br>
+
+</form>
+   
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+*{
+  padding:5px;
+  margin:0px;
+}
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url('/static/images/hr3.jpg');
+  color: white;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+label{
+  font-size: 15px;
+  width: 260px;
+  display: inline-block;
+  margin-left: 400px;
+}
+
+input{
+  height: 13%;
+  width:  28%;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+
+} 
+
+#heading{
+margin-top: 1cm;
+font-size: 40px;
+color: white;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-style: italic;
+}
+
+
+#button{
+  
+  border:5px;
+  background-color:rgb(255, 255, 255);
+  color: rgb(0, 0, 0) ;
+  font-size: 14px;
+  padding: 6px;
+  border-radius:8px;
+  width:200px;
+  height:30px;
+}
+
+#button:hover{
+    background-color:rgb(64, 161, 202);
+    transition: .5s ease-in-out;
+    color:rgb(0, 0, 0);
+}
+
+#reset{
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 23px;
+    
+}
+#reset:hover{
+  background-color:rgb(64, 161, 202);
+  transition: .5s ease-in-out;
+  color: rgb(255, 0, 0);
+ 
+}
+
